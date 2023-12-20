@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>List of Recipes</title>
+	<link rel="stylesheet" href="/welcome.css" type="text/css">
+
+</head>
+
+<body>
+	<br><br><br><br><br><br><br>
+	
+	<form action="/optionpage" method="post">
+
+		<div id="sorryMahi">
+			<h1>List of Recipes</h1><br>
+
+			<%- recipeList %>
+	
+			<!-- Dashwana in the varibale above you need to do something like the following -->
+			<!-- <input type="checkbox" id = "hbp" name = "highBloodPressure" value="High Blood Pressure"> -->
+			<!-- Make sure you have all the names of the checkboxes the same so that you can retrive the checked recipe by using request.body -->
+			Enter a recipe you would like to add to your account. (Recipes will not be added if not seen above) <input type="text" id="recipeList" name="recipeList">
+		
+
+		<input type="submit" value="Search">
+		</div>
+	</form>
+    
+
+</body>
+
+</html>
