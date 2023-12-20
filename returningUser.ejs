@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Returning User</title>
+	<link rel="stylesheet" href="/welcome.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<a href="/" class="home-icon">
+        <i class="fa fa-home"></i> 
+    </a>
+	<h1>Recipe Finder</h1>
+	<form id="return" action="/returninguser" method="post">
+		<label id="returnEmail"><strong>Enter email:</strong> <input type="text" name="newEmail" id="newEmail"> </label> 
+		<br>
+        <input type="submit" value="Login" onclick="window.location.href='/ingredients';">
+        <input type="reset">
+		
+	</form>
+</body>
+
+</html>
