@@ -1,0 +1,176 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: rgba(115, 128, 60, 0.8);  */
+    background-image: url(lemon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: #b97b1e 0.7rem solid;
+    border-style:groove;
+     
+    height: 100vh;
+    width: 100vw; 
+    box-sizing: border-box;
+   
+
+   
+}
+
+h1 {
+    
+    font-size: 4.5em;
+    color: rgb(212, 212, 39); 
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+  
+}
+
+#h1{
+    text-shadow: 10px 10px 4px 4px rgb(22, 22, 22);
+    margin-top: 10px;
+}
+
+#welcome{
+    background-color: rgba(115, 128, 60, 0.8); 
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    margin-top: 70px;
+    border-radius: 8px;
+    flex-direction: column;
+    
+    display: flex; 
+    align-items: center; 
+    box-shadow: 5px 5px 5px 5px rgb(90, 87, 87);
+    
+}
+#return{
+    margin-top: 40px;
+}
+#newName{
+    background-color: rgba(115, 128, 60, 0.8); 
+    padding: 20px;
+    width: 300px;
+   
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+    
+}
+#newN{
+    color:rgb(252, 233, 212);
+}
+#newE{
+    color:rgb(252, 233, 212);
+}
+#newEmail{
+    background-color: rgba(115, 128, 60, 0.8); 
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+    
+}
+#newuser{
+    margin-top:37px;
+}
+#returnEmail{
+    color:rgb(252, 233, 212);
+}
+#ingredients{
+    background-color: rgba(115, 128, 60, 0.8); 
+    padding: 20px;
+    width: 300px;
+    font-size: large;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+    
+}
+.home-icon .fa {
+    font-size: 50px; 
+    padding-left: 60rem;
+    color:#d4d5d6;
+    display: inline-block;
+   
+}
+
+
+#ingredientsForm{
+    margin-top: 37px;
+    padding-top: 2em;
+}
+#ingred{
+    color:rgb(252, 233, 212);
+}
+input[type="button"] {
+    background-color: #34b1db; 
+    color: rgb(29, 29, 28);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgb(90, 87, 87);
+    
+}
+input[type="submit"] {
+    background-color: #34b1db; 
+    color: rgb(29, 29, 28);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgb(90, 87, 87);
+    
+}
+
+input[type="reset"]{
+    background-color: #34b1db; 
+    color: rgb(29, 29, 28);
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgb(90, 87, 87);
+}
+
+input[type="button"]:hover {
+    background-color: #2980b9; 
+}
+input[type="submit"]:hover {
+    background-color: #2980b9; 
+}
+input[type="reset"]:hover {
+    background-color: #2980b9; 
+}
+h1:hover{
+   color: #4b5f45; 
+}
+#sorryMahi{
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; 
+    padding-top: 10rem;
+}
+#idk{
+    padding-left: 32em;
+}
