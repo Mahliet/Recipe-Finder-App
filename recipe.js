@@ -14,7 +14,7 @@ const axios = require('axios');
 
 
 
-async function idk(options){
+async function id(options){
   try {
     const response = await axios.request(options);
     return response;
@@ -37,7 +37,7 @@ require("dotenv").config(__dirname);
 
 const uri = process.env.MONGO_CONNECTION_STRING;
 
-/* Our database and collection */
+/*database and collection */
 const databaseAndCollection = {db: process.env.MONGO_DB_NAME, collection: process.env.MONGO_COLLECTION};
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
@@ -93,7 +93,7 @@ app.get("/returninguser", (request, response) => {
 }); 
 
 app.post("/returninguser", async (request, response) => {
-  // We need to retrieve the username based on the email provided from MongoDB
+  //need to retrieve the username based on the email provided from MongoDB
   let {newEmail} =  request.body;
 
   const client = new MongoClient(uri, { serverApi: ServerApiVersion.v1 });
@@ -108,13 +108,20 @@ app.post("/returninguser", async (request, response) => {
       const result = await cursor.toArray();
       await client.close();
 
-      let retUser = `<h1>`;
-      retUser += result.map(r => r.newName);
-      newUsername =  result.map(r => r.newName); 
-      retUser += `</h1>`;
-  const variables = {
-    username: retUser
-  };
+      let retUser = ``;
+      
+      if(result.length > 0) {
+        retUser = result[0].newName;
+        newUsername = result[0].newName;
+    } else {
+        
+        retUser = "User Not Found";
+        newUsername = "";
+    }
+      
+      const variables = {
+        username: ` back, ${retUser}`
+      };
 
   response.render("ingredients", variables);
 });
@@ -124,7 +131,7 @@ app.get("/newuser", (request, response) => {
 }); 
 
 app.post("/newuser", async (request, response) => {
-  // We need to save the name of the user and email address as well in MongoDB
+  //need to save the name of the user and email address as well in MongoDB
   let {newName, newEmail} =  request.body;
 
   const client = new MongoClient(uri, { serverApi: ServerApiVersion.v1 });
@@ -135,7 +142,7 @@ app.post("/newuser", async (request, response) => {
   await client.close();
   newUser = newEmail;
   newUsername = newName; 
-  response.render("ingredients", {username: `<h1>${newName}</h1>`});
+  response.render("ingredients", {username: `${newName}`});
 });
 app.get("/ingredients", (request, response) => { 
   // console.log(newUser);
@@ -166,7 +173,7 @@ app.post("/ingredients", async (request, response) =>{
       'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
     }
   };
-  const res = await idk(options);
+  const res = await id(options);
   //stop
   if (res.data.hits == undefined){
     process.exit(0);
