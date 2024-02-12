@@ -5,16 +5,19 @@
 	<meta charset="utf-8" />
 	<title>List of Recipes</title>
 	<link rel="stylesheet" href="/welcome.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-	<br><br><br><br><br><br><br>
-	
+	<a href="/" class="home-icon">
+        <i class="fa fa-home"></i> 
+    </a>
 	<form action="/optionpage" method="post">
-
-		<div id="sorryMahi">
-			<h1>List of Recipes</h1><br>
+		
+		
+		<div id="Rec">
+			<h1 id="listOfReci">List of Recipes</h1><br>
 
 			<%- recipeList %>
 	
@@ -32,3 +35,4 @@
 </body>
 
 </html>
+
