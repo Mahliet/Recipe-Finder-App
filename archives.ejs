@@ -5,13 +5,16 @@
 	<meta charset="utf-8" />
 	<title>User Archives</title>
 	<link rel="stylesheet" type="text/css" href="/welcome.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<h1>Recipes</h1>
-	<div id="sorryMahi">
-		<form action="/archives" method="post">
-		
+	<a href="/" class="home-icon">
+        <i class="fa fa-home"></i> <!-- Replace with the actual path to your icon -->
+    </a>
+	<h1 id="reci">Recipes</h1>
+
+		<form id="recipeTable" action="/archives" method="post">
 			<%- here %>
 			<br>
 			<br>
@@ -19,7 +22,7 @@
 			<input type="reset">
 			
 		</form>
-	</div>
+	
 </body>
 
 </html>
