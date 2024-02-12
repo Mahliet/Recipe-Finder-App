@@ -17,7 +17,7 @@ body {
     border: #b97b1e 0.7rem solid;
     border-style:groove;
      
-    height: 100vh;
+    height: 120vh;
     width: 100vw; 
     box-sizing: border-box;
    
@@ -34,6 +34,7 @@ h1 {
     text-align: center; 
   
 }
+
 
 #h1{
     text-shadow: 10px 10px 4px 4px rgb(22, 22, 22);
@@ -113,9 +114,30 @@ h1 {
 #ingredientsForm{
     margin-top: 37px;
     padding-top: 2em;
+    
 }
 #ingred{
     color:rgb(252, 233, 212);
+}
+#listOfReci{
+    margin-top:33px;
+    font-size: 2rem;
+}
+#reci{
+    margin-top:300px;
+}
+#recipeTable{
+    color: white; 
+    margin-left: 3rem;
+    
+
+}
+.ret{
+    font-size: 2rem;
+    color: #e5be84; 
+    
+    padding-left: 5rem;
+    text-align: center; 
 }
 input[type="button"] {
     background-color: #34b1db; 
@@ -163,14 +185,13 @@ input[type="reset"]:hover {
 h1:hover{
    color: #4b5f45; 
 }
-#sorryMahi{
+#Rec{
     color: white; 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem; 
     padding-top: 10rem;
+    
 }
-#idk{
-    padding-left: 32em;
-}
+
