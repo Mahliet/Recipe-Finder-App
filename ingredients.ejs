@@ -5,30 +5,28 @@
 	<meta charset="utf-8" />
 	<title>Ingredients</title>
 	<link rel="stylesheet" href="/welcome.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
 	
-	
+	<a href="/" class="home-icon">
+        <i class="fa fa-home"></i> 
+    </a>
 
     <!-- Send in the user name using post -->
 	<form id="ingredientsForm" action="/ingredients" method="post">
-		<%- username %>
-		<br>
-		<a href="/" class="home-icon">
-			<i class="fa fa-home"></i> 
-		</a>
-		<a href="/ingredients" class="home-icon">
-			<i class="fa fa-search"></i>
-		</a>
+		<lable class="ret">Welcome <%- username %>!</lable>
+		
+		
 		<h1>Recipe Finder</h1>
-		<div id="idk">
+		
 		<label id="ingred"><strong>Ingredients: </strong> <input type="text" name="ingredients" id="ingredients" placeholder="chicken, onions, flour"></label>
         <br>
         <br>
 		<input type="submit" value="Search">
 		<input type="submit" value="Archive">
-		</div>
+	
 	</form>
 </body>
 
